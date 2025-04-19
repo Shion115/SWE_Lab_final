@@ -55,7 +55,7 @@ public:
     virtual ~GUIFactory() = default;
 };
 
-// ========== Concrete Factories ==========
+
 
 class WindowsFactory : public GUIFactory {
 public:
@@ -79,7 +79,7 @@ public:
     }
 };
 
-// ========== Client Code ==========
+
 
 class Application {
 private:
@@ -103,7 +103,7 @@ public:
     }
 };
 
-// ========== Unit Tests ==========
+
 
 TEST(GUIFactoryTest, WindowsFactoryTest) {
     WindowsFactory factory;
